@@ -30,16 +30,18 @@
             </div>
 
             <div class="collapse navbar-collapse" id="navbarsExample05" style="padding-left: 800px " >
-                <ul class="navbar-nav pl-md-5 mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index">Signout</a>
-                    </li>
-                    <li class="nav-item" style="text-align: right">
-                        <a class="nav-link" href="/account">Account</a>
-                    </li>
-                </ul>
 
-
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>mehmood</span> <i class="far fa-user"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/account"><i class="far fa-user-cog"></i> My Account</a>
+                        <a class="dropdown-item" href="/view"><i class="far fa-file-export"></i> File Manager</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/index" class="dropdown-item logout"><i class="far fa-power-off"></i> Logout</a>
+                    </div>
+                </li>
 
             </div>
         </div>
@@ -70,6 +72,8 @@
                         <img class="file-upload-image" src="#" alt="your image" />
                         <div class="image-title-wrap">
                             <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                            <button type="button" onclick="removeUpload()" class="upload-image">Upload <span class="image-title">Uploaded Image</span></button>
+
                         </div>
                     </div>
                 </div>
