@@ -78,9 +78,10 @@
             <div class="col-lg text-center">
                 <br> <br><br> <br>
 
-                <a href="view.html" class="btn btn-outline-secondary" style="height:250px; width: 250px; color: #2e9ece; font-size: 40px; border: solid">View Files
+                <div class="asdf">
+                <a href="/view" class="btn btn-outline-secondary">View Files
                 </a>
-
+                </div>
             </div>
         </div>
     </div>

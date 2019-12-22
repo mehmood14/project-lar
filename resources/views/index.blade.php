@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Share Traffic - Store your files</title>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')   }}">
     <link rel="stylesheet" href="{{ asset('css/style.css')   }}">
@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 
         <div class = "gfg">
-            <p style="text-align: right" ><a href="/index"><img src="img/log.png"></a></p>
+            <p style="text-align: right ;width: 100%;max-width:100%;height:auto;" ><a href="/index"><img src="img/log.png" ></a></p>
         </div>
         <div class="site-logo">
             <h4 style=" color: white; font-size: 1.1rem; font-weight: 700; letter-spacing: .3rem;">Share Traffic</h4>
@@ -68,8 +68,8 @@
 <!--- div2 --->
 <div id="div2" class="offset">
     <div class="row" align="right">
-        <div class="col-md-6">
-            <img src="img/files.jpg">
+        <div class="col-md-6" style="width: 100%;max-width:100%;height:auto;">
+            <img src="img/files.jpg" >
         </div>
 
         <div class="col-md-6 narrow text-center">
@@ -86,7 +86,7 @@
 
 <div id="div3" class="offset">
     <div class="row" align="right">
-        <img src="img/div3.jpg" style="width: 100% ">
+        <img src="img/div3.jpg" style="width: 100%;max-width:100%;height:auto;">
     </div>
 </div>
 <!---div3 --->
@@ -104,7 +104,7 @@
         </div>
 
         <div class="col-md-6">
-            <img src="img/div4.png">
+            <img src="img/div4.png" style="width: 100%;max-width:100%;height:auto;">
         </div>
     </div>
 </div>
@@ -117,7 +117,7 @@
 <div id="div5" class="offset">
 
     <div class="row">
-        <img src="img/divv55.jpeg">
+        <img src="img/divv55.jpeg" style="width: 100%;max-width:100%;height:auto;">
     </div>
 </div>
 <!---div5 --->
@@ -129,9 +129,7 @@
 <div id="div6" class="offset">
     <div class="col-12 narrow text-center" style="padding-top: 100px; padding-bottom: 100px">
         <p>    <img src="img/log.png"></p>
-
         <p class="apple">Get started with Drive for free</p>
-        <a class="btn btn-outline-dark btn-md text-white"  target="_blank" href="/signup">Go To Share Traffic</a>
     </div>
 </div>
 <!---div6 --->

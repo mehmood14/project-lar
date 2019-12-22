@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Font Icon -->
-    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <title>Stellar Admin</title>
 
-    <!-- Main css -->
-    <link rel="stylesheet" href="{{ asset('css/su.css')   }}">
-
-
+    <link rel="stylesheet" href="{{ asset('css/login.css')   }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')   }}">
     <link rel="stylesheet" href="{{ asset('css/style.css')   }}">
     <link rel="stylesheet" href="{{ asset('css/fixed.css')   }}">
@@ -69,49 +70,118 @@
 
 </div>
 <!---end home --->
-<div class="main">
+<div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+        <div class="content-wrapper">
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <div class=" p-5">
+                        <div class="brand-logo">
+                            <p> <img src="img/log.png"></p></br>
+                        </div>
+                        <h4>Hello! let's get started</h4>
+                        <h6 class="font-weight-light">Sign in to continue.</h6>
 
-    <!-- Sing in  Form -->
-    <section class="sign-in">
-        <div class="container">
-            <div class="signin-content">
-                <div class="signin-image">
-                    <figure><img src="img/signin-image.jpg" alt="sing up image"></figure>
-                    <a href="/signup" class="signup-image-link">Create an account</a>
-                </div>
+                        <form action="/examples/actions/confirmation.php" class="needs-validation" method="post" novalidate>
+                            <div class="form-group">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword">Password</label>
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                                <div class="invalid-feedback">Please enter your password to continue.</div>
+                            </div>
+                            <div class="button">
+                                <button type="submit" class="btn btn-default btn-lg btn-block">SIGN IN</button></br>
+                            </div>
 
-                <div class="signin-form">
-                    <h2 class="form-title">Sign in</h2>
-                    <form method="POST" class="register-form" id="login-form">
-                        <div class="form-group">
-                            <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                            <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
-                        </div>
-                        <div class="form-group">
-                            <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                            <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                            <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
-                        </div>
-                        <div class="form-group form-button">
-                            <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
-                        </div>
-                    </form>
-                    <div class="social-login">
-                        <span class="social-label">Or login with</span>
-                        <ul class="socials">
-                            <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                            <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                            <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-                        </ul>
+                            <div>
+                                <a href="#" class="auth-link text-black">Forgot password?</a>
+                            </div> </br>
+
+                            <div class="icons" style="text-align: center;" style="display: inline-block;">
+                                <a class="btn btn-social-icon btn-twitter"  href= "https://twitter.com/?lang=en>">
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                                <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/">
+                                    <span class="fa fa-facebook"></span>
+                                </a>
+                                <a class="btn btn-social-icon btn-google" href="https://mail.google.com/mail/">
+                                    <span class="fa fa-google"></span>
+                                </a>
+
+                            </div>
+
+
+                            <div class="text-center mt-4 font-weight-light"> Don't have an account? <a href="/signup" class="text-primary">Create</a>
+                            </div>
+
+                        </form>
+
+                        <!-- JavaScript for disabling form submissions if there are invalid fields -->
+                        <script>
+                            // Self-executing function
+                            (function() {
+                                'use strict';
+                                window.addEventListener('load', function() {
+                                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                    const forms = document.getElementsByClassName('needs-validation');
+                                    // Loop over them and prevent submission
+                                    const validation = Array.prototype.filter.call(forms, function(form) {
+                                        form.addEventListener('submit', function(event) {
+                                            if (form.checkValidity() === false) {
+                                                event.preventDefault();
+                                                event.stopPropagation();
+                                            }
+                                            form.classList.add('was-validated');
+                                        }, false);
+                                    });
+                                }, false);
+                            })();
+                        </script>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</div>
 
+<div id="div7" class="offset">
+    <footer>
+        <div class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <h4> Share Traffic </h4>
+                    </div>
+                    <div class="col-lg-3 col-sm-2 col-xs-3">
+                        <h3> Contact </h3>
+                        <ul>
+                            <li><a class="email"href="#"> insert email here </a></li>
+                            <br/>
+                            <li> <p> address line one </p> </li>
+                            <li> <p> address line two </p> </li>
+                        </ul>
+                    </div>
+
+
+                    <!--/.row-->
+                </div>
+                <!--/.container-->
+            </div>
+            <!--/.footer-->
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="pull-left copyright"> Copyright © Share Traffic. All right reserved. </p>
+
+                </div>
+            </div>
+            <!--/.footer-bottom-->
+
+    </footer>
 </div>
 
 <!-- JS -->

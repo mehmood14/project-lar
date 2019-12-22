@@ -59,7 +59,7 @@
                         <div class="widget">
                             <div class="user-photo">
                                 <a href="#">
-                                    <img src="agent-2.jpg" alt="User Photo">
+                                    <img src="img/agent-2.jpg" alt="User Photo">
                                     <span class="user-photo-action">Click here to reupload</span>
                                 </a>
                             </div><!-- /.user-photo -->

@@ -31,5 +31,9 @@ Route::get('/ pass' ,function () {
     return view('pass');
 });
 
+Route::get('/ login' ,function () {
+    return view('login');
+});
+
 
 
